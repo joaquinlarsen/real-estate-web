@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <title>Grupo G</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap 4.19.1 -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css"/>
+    <!-- Email JavaScript -->
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <!-- Custom JavaScript -->
+    <script src="assets/js/script.js"></script>
+</head>
+
+<body>
+<!-- NavBar -->
+<header class="header">
+    <div class="container">
+        <!--Navbar-->
+        <nav class="navbar navbar-expand-lg">
+
+          <!-- Navbar brand -->
+          <a class="navbar-brand" href="index.html">Grupo<span class="color-primary">G</span>  </a>
+
+          <!-- Collapse button -->
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav"
+          aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="fas fa-bars"></span>
+          </button>
+
+          <!-- Collapsible content -->
+          <div class="collapse navbar-collapse" id="basicExampleNav">
+
+            <!-- Links -->
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="inmobiliaria.html">Inmobiliaria</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="contacto.html">Contacto</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+    </div>
+</header>
+<!-- /NavBar -->
+
+<!-- Contact us Section -->
+<section id="contact-us">
+    <div class="container">
+            <div class="col-lg-11 col-md-11 pl-lg-5 px-4 mt-md-0 mt-5">
+                <h6 class="h6 color-primary m-0 mb-2">Sobre nosotros</h6>
+                <h1 class="h1 h1-responsive mb-4">Tenemos la mejor propiedad para vos</h1>
+                <p> In expecting display.thought.Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <p> sed do eiusmod tempor incididunt ut labore et dolore magna aliqua </p>
+            </div>
+    </div>
+</section>
+<!-- /About us Section -->
+
+<!-- Form Section -->
+<section id="contacto">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 my-auto">
+                <i class="fas fa-home mr-1 align-self-center"></i><span class="mr-3"> Direccion </span>
+                <span>
+                    <p> Rosario, Santa Fe, Argentina</p>
+                </span>
+                <i class="fas fa-phone mr-1 align-self-center"></i><span> +54 341 123 4567 </span>
+                    <span>
+                      <p> Horario en que abre </p>
+                    </span>
+                <i class="fas fa-envelope mr-1 align-self-center"></i><span> mail@email.com </span>
+                <span>
+                    <p> Contactanos vía email! </p>
+                </span>
+            </div>
+            <div class="col-lg-4 col-md-6 pl-lg-6 px-2 mt-md-0 mt-5">
+                <form action="" method="post" onSubmit="window.location.reload()">
+                <input type="text"  class="form-control mb-2" name="name" id="name" placeholder="Ingresa tu nombre" required>
+                <input type="email" class="form-control mb-2" name="email" id="email" placeholder="Ingresa tu mail" required>
+                <input type="text" class="form-control mb-2" name="subject" id="subject" placeholder="Ingresa el motivo de la consulta" required>
+                <textarea rows="8" class="form-control mb-2" name="message" id="message" placeholder="Mensaje" required></textarea>
+                <button type="submit" class="btn btn-theme-2 justify-content" onclick="send(event)"> Enviar! </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- /Contact Section -->
+
+<!-- Footer Section -->
+<footer id="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2 my-md-auto my-4">
+                <h4 class="h3">GrupoG</h4>
+            </div>
+            <div class="col-md-2 col-6 my-md-auto my-4">
+                <h6 class="m-0 h6">Enlaces útiles</h6>
+                <hr color="#fff">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="inmobiliaria.html">Inmobiliaria</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+            <div id="footer-contacto" class="col-md-2 ml-auto">
+                <h6 class="m-0 h6">Contacto</h6>
+                <hr color="#fff">
+                <ul>
+                    <li><i class="fas fa-home mr-1 align-self-center"></i>Direccion</li>
+                    <li><i class="fab fa-whatsapp mr-1 align-self-center"></i>+64541651</li>
+                    <li><i class="far fa-envelope mr-1 align-self-center"></i>mail@mail.com</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- /Footer Section -->
+
+
+</body>
+</html>
+
+<!-- JQuery -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<!-- Bootstrap tooltips -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+<!-- Bootstrap core JavaScript -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+<!-- MDB core JavaScript -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
+<!-- SwiperJs JavaScript -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
